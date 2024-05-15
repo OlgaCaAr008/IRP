@@ -1,0 +1,30 @@
+Launch Git Bash
+	cd Direccion carpeta
+	cd - : carpeta atras
+	ls : mirar el que tenim dins
+
+Inicializar repositorio bacio:
+	git init
+
+Configurar:
+	git config user.name "Olga"
+	git config user.email "olga@..."
+
+Communicar local con el remoto:
+	git remote add origin ["url online"]
+
+
+afegir document:
+	git status
+	git add "example.py" / git add .
+	git commit -m "Explicar el commit"
+	git status
+
+mirar els commits que he fet:
+	git log
+
+mirar ramas
+	git branch
+
+tornar a la principal
+	git switch master
