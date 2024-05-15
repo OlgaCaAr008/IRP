@@ -13,18 +13,32 @@ Configurar:
 Communicar local con el remoto:
 	git remote add origin ["url online"]
 
-
-afegir document:
+Afegir document:
 	git status
 	git add "example.py" / git add .
 	git commit -m "Explicar el commit"
 	git status
+	git push -u origin master
 
-mirar els commits que he fet:
+Actualitzar rama:
+	git pull origin master
+
+Mirar els commits que he fet:
 	git log
 
-mirar ramas
-	git branch
+Ramas:
+	git branch : en que rama estamos ahora
+	git branch rama1 : creamos rama1
+	git branch -m rama1 ramita1 : canviamos el nombre de la rama de rama1 a ramita1
+	git checkout ramita1 : cambiamos de rama
+	git branch -d ramita1 : eliminar la rama
+	
+	* antes de salir de la rama: git add . y git commit -m ""
 
-tornar a la principal
-	git switch master
+Mirar diferencias entre ramas:
+	git diff master rama1
+
+Unificar ramas:
+	git merge rama1 master [hay que estar en master]
+	git add .
+	git commit -m "cambios master"
